@@ -66,9 +66,7 @@ public class Solution {
         int minCost = Integer.MAX_VALUE;
 
         for (int i = 1; i <= n; i++) {
-            if (distFromS[i] != Integer.MAX_VALUE && distFromA[i] != Integer.MAX_VALUE && distFromB[i] != Integer.MAX_VALUE) {
                 minCost = Math.min(minCost, distFromS[i] + distFromA[i] + distFromB[i]);
-            }
         }
 
         return minCost;
